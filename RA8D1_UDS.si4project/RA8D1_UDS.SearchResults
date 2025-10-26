@@ -1,0 +1,2 @@
+---- MASK_VALUE Matches (1 in 1 files) ----
+SID27_SecurityAccessCfg.h (UserTask\UDS\DCM) line 10 : #define MASK_VALUE 0x55ACF799U

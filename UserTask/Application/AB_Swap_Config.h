@@ -1,0 +1,50 @@
+#ifndef __AB_SWAP_CONFIG_H_
+#define __AB_SWAP_CONFIG_H_
+
+#include <stdint.h>
+#include <stdbool.h>
+
+
+#define EE_ADDRESS_UPDATE_FLAG (0x0U)
+
+/**
+ * @brief Update flag status
+ */
+#define UPDATE_FLAG_REQUEST  (0x55AACC33U)
+#define UPDATE_FLAG_ON_GOING (0x4F4E474FU)
+#define UPDATE_FLAG_DONE     (0x444F4E45U)
+#define UPDATE_FLAG_IDLE     (0x49444C45U)
+
+/**
+ * @brief Firmware Integrity Check Configuration
+ */
+#define ACTIVE_BOOT_FIRMWARE_START_ADDRESS    (0x0U)
+#define ACTIVE_BOOT_FIRMWARE_LENGTH           (0x1FFF0U)
+#define ACTIVE_BOOT_FIRMWARE_CHECKSUM_ADDRESS (0x1FFF0U)
+#define ACTIVE_APP_FIRMWARE_START_ADDRESS     (0x20000U)
+#define ACTIVE_APP_FIRMWARE_LENGTH            (0x10000U)
+#define ACTIVE_APP_FIRMWARE_CHECKSUM_ADDRESS  (0xDFFF0U)
+
+#define BACKUP_BOOT_FIRMWARE_START_ADDRESS    (0x100000U)
+#define BACKUP_BOOT_FIRMWARE_LENGTH           (0x1FFF0U)
+#define BACKUP_BOOT_FIRMWARE_CHECKSUM_ADDRESS (0x11FFF0U)
+#define BACKUP_APP_FIRMWARE_START_ADDRESS     (0x120000U)
+#define BACKUP_APP_FIRMWARE_LENGTH            (0x10000U)
+#define BACKUP_APP_FIRMWARE_CHECKSUM_ADDRESS  (0x1DFFF0U)
+
+
+/** @brief DFlash start address */
+#define DFLASH_START_ADDR (0x001E0000U)
+/** @brief Bank space start address */
+#define DFLASH_ALTER_START_ADDR (0xE0000U)
+
+#define DFLASH_LENGTH (0x20000U)
+
+
+#define APP_START_ADDR (0x20000U)
+
+
+#define BACKUP_AREA_ADDR (0x100000U)
+
+
+#endif
